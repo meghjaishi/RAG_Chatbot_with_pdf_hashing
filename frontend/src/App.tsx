@@ -24,33 +24,127 @@ function App() {
   if (!token) {
     return (
       <div className="landing-page">
-
-        {/* New portfolio/demo content goes here */}
-
         <section className="hero-section">
-          {/* Hero content */}
-          {/* Demo conversation */}
+          <div className="hero-content">
+            <p className="hero-badge">
+              Multi-Document RAG Application
+            </p>
+
+            <h1>
+              Personal RAG Chatbot
+            </h1>
+
+            <p className="hero-description">
+              Ask natural-language questions across
+              multiple PDF documents using retrieval-
+              augmented generation.
+            </p>
+
+            <div className="hero-tech">
+              <span>React</span>
+              <span>FastAPI</span>
+              <span>Pinecone</span>
+              <span>OpenAI</span>
+              <span>LangChain</span>
+            </div>
+
+            <a
+              href="#login"
+              className="hero-button"
+            >
+              Sign in
+            </a>
+          </div>
+
+          <div className="demo-card">
+            <div className="demo-header">
+              Demo conversation
+            </div>
+
+            <div className="demo-message user-demo">
+              What is reinforcement learning?
+            </div>
+
+            <div className="demo-message assistant-demo">
+              Reinforcement learning is a machine
+              learning approach in which an agent
+              learns by interacting with an
+              environment and receiving rewards.
+            </div>
+
+            <div className="demo-message user-demo">
+              How is it different from supervised
+              learning?
+            </div>
+
+            <div className="demo-message assistant-demo">
+              Unlike supervised learning, reinforcement
+              learning learns from rewards and
+              interaction rather than labeled examples.
+            </div>
+          </div>
         </section>
 
         <section className="features-section">
-          {/* Feature cards */}
+          <h2>Project Features</h2>
+
+          <div className="feature-grid">
+            <div className="feature-card">
+              <h3>Multi-Document RAG</h3>
+              <p>
+                Retrieves relevant chunks from multiple
+                PDF documents using vector search.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Streaming Responses</h3>
+              <p>
+                FastAPI SSE streaming delivers answers
+                token by token to the React frontend.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Conversation Context</h3>
+              <p>
+                Follow-up questions use conversation
+                history and query rewriting.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Incremental Ingestion</h3>
+              <p>
+                PDF hashing avoids unnecessarily
+                re-embedding unchanged documents.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Authentication</h3>
+              <p>
+                JWT-protected FastAPI endpoints with
+                session-expiration handling.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Two Frontends</h3>
+              <p>
+                React for the production-style UI and
+                Streamlit for rapid experimentation.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section
           id="login"
           className="login-section"
         >
-          <p className="demo-note">
-            The public GitHub Pages deployment is a
-            frontend showcase. Full authentication
-            and RAG functionality require the
-            FastAPI backend.
-          </p>
-
-          {/* Your EXISTING working LoginForm */}
           <LoginForm onLogin={setToken} />
         </section>
-
       </div>
     );
   }
