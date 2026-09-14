@@ -1,0 +1,959 @@
+{
+  "dataset_version": "1.0",
+  "annotations": {
+    "q01": {
+      "id": "q01",
+      "question": "What is a Deep Q-Network (DQN)?",
+      "reference_answer": "A Deep Q-Network is a deep learning model for reinforcement learning that uses a convolutional neural network trained with a variant of Q-learning. It operates on raw visual input and outputs action-value estimates that represent expected future rewards.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:20",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 20,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:19",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 19,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:1",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 1,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q02": {
+      "id": "q02",
+      "question": "What type of input does the DQN in the paper use?",
+      "reference_answer": "The DQN operates directly on raw visual input from Atari game screens rather than depending on manually engineered visual features.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:32",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 32,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:1",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 1,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:79",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 7,
+          "chunk": 79,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q03": {
+      "id": "q03",
+      "question": "Why is reinforcement learning difficult for conventional deep learning methods?",
+      "reference_answer": "Reinforcement learning presents several difficulties for deep learning because reward signals may be sparse, noisy, and delayed, observations are often highly correlated over time, and the data distribution changes as the agent learns new behaviors.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:6",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 6,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:5",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 5,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:7",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 7,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q04": {
+      "id": "q04",
+      "question": "What problem does experience replay address in deep reinforcement learning?",
+      "reference_answer": "Experience replay helps reduce problems caused by correlated training data and changing data distributions by storing previous transitions and randomly sampling past experiences for training.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:44",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 4,
+          "chunk": 44,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:41",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 4,
+          "chunk": 41,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q05": {
+      "id": "q05",
+      "question": "How does experience replay work in the DQN approach?",
+      "reference_answer": "The agent stores transitions from its interaction with the environment in replay memory and later samples stored transitions randomly to perform Q-learning updates.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:46",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 4,
+          "chunk": 46,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:39",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 39,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:44",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 4,
+          "chunk": 44,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:45",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 4,
+          "chunk": 45,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q06": {
+      "id": "q06",
+      "question": "Is the DQN algorithm model-free or model-based?",
+      "reference_answer": "The algorithm is model-free because it learns directly from samples obtained through interaction with the environment without explicitly constructing an estimate of the environment.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:24",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 24,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:2",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 2,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:40",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 40,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q07": {
+      "id": "q07",
+      "question": "Is DQN an on-policy or off-policy method?",
+      "reference_answer": "DQN is an off-policy method. It learns about a greedy strategy while following a behavior distribution that supports exploration.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:25",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 25,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:24",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 24,
+          "relevance": "relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q08": {
+      "id": "q08",
+      "question": "What is the purpose of an epsilon-greedy strategy in DQN?",
+      "reference_answer": "An epsilon-greedy strategy balances exploitation and exploration by usually selecting the greedy action while occasionally selecting a random action to explore the state space.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:25",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 25,
+          "relevance": "relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q09": {
+      "id": "q09",
+      "question": "Why does DQN use stochastic gradient updates?",
+      "reference_answer": "Stochastic gradient updates allow efficient learning from sampled experiences with a low computational cost per update instead of repeatedly processing an entire growing dataset.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:31",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 31,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:23",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 23,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:36",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 36,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q10": {
+      "id": "q10",
+      "question": "What did the DQN paper demonstrate on Atari 2600 games?",
+      "reference_answer": "The paper demonstrated that a deep reinforcement learning model could learn control policies directly from raw pixels and achieve state-of-the-art performance on six of seven tested Atari games, while exceeding a human expert on three games.",
+      "category": "deep_rl",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:79",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 7,
+          "chunk": 79,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:2",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 0,
+          "chunk": 2,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:53",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 5,
+          "chunk": 53,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q11": {
+      "id": "q11",
+      "question": "What is the goal of few-shot meta-learning?",
+      "reference_answer": "The goal of few-shot meta-learning is to train a model that can quickly adapt to a new task using only a small number of examples and training iterations.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:16",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 16,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:15",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 15,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:54",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 4,
+          "chunk": 54,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:40",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 3,
+          "chunk": 40,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q12": {
+      "id": "q12",
+      "question": "What does MAML stand for?",
+      "reference_answer": "MAML stands for Model-Agnostic Meta-Learning.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:26",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 2,
+          "chunk": 26,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:65",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 5,
+          "chunk": 65,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:20",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 20,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q13": {
+      "id": "q13",
+      "question": "What is the main idea behind Model-Agnostic Meta-Learning?",
+      "reference_answer": "MAML learns an initialization of model parameters that can be adapted effectively to a new task using only a small number of gradient updates and a small amount of task-specific data.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:8",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 0,
+          "chunk": 8,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:16",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 16,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:13",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 13,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q14": {
+      "id": "q14",
+      "question": "What happens during the task-specific adaptation step in MAML?",
+      "reference_answer": "For each task, MAML evaluates the task loss gradient using a small number of examples and applies one or more gradient descent updates to obtain task-adapted parameters.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:133",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 11,
+          "chunk": 133,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q15": {
+      "id": "q15",
+      "question": "How does MAML differ from ordinary pretraining?",
+      "reference_answer": "Ordinary pretraining primarily seeks parameters that perform well on the training tasks, whereas MAML explicitly optimizes parameters so that subsequent gradient updates can rapidly produce good performance on new tasks.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:57",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 4,
+          "chunk": 57,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:68",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 5,
+          "chunk": 68,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:133",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 11,
+          "chunk": 133,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q16": {
+      "id": "q16",
+      "question": "Does MAML depend on a particular model architecture?",
+      "reference_answer": "No. MAML is model-agnostic and can be applied to different parameterized models as long as the required gradient-based optimization can be performed.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:26",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 2,
+          "chunk": 26,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:1",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 0,
+          "chunk": 1,
+          "relevance": "relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q17": {
+      "id": "q17",
+      "question": "Why can MAML adapt quickly to new tasks?",
+      "reference_answer": "MAML learns initial parameters that are especially suitable for adaptation, so relatively small gradient-based parameter changes can produce large improvements on a new task.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:25",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 25,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:13",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 13,
+          "relevance": "relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:16",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 16,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:23",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 23,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q18": {
+      "id": "q18",
+      "question": "Can MAML be applied to reinforcement learning?",
+      "reference_answer": "Yes. MAML can be applied to reinforcement learning and the paper demonstrates adaptation of reinforcement-learning policies using policy-gradient methods and relatively small amounts of experience.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:86",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 6,
+          "chunk": 86,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:14",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 14,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:40",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 3,
+          "chunk": 40,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q19": {
+      "id": "q19",
+      "question": "How does MAML use knowledge from previous tasks?",
+      "reference_answer": "MAML uses experience across many training tasks to learn shared initial parameters that transfer to new tasks and allow those tasks to be learned rapidly instead of starting from an arbitrary initialization.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:16",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 16,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:17",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 17,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q20": {
+      "id": "q20",
+      "question": "What are the main steps in the MAML training algorithm?",
+      "reference_answer": "MAML samples tasks, evaluates each task loss using a small number of examples, computes adapted parameters through gradient descent, evaluates the adapted models, and then updates the shared initial parameters using the meta-objective across the sampled tasks.",
+      "category": "meta_learning",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:26",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 2,
+          "chunk": 26,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:38",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 3,
+          "chunk": 38,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:31",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 2,
+          "chunk": 31,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q21": {
+      "id": "q21",
+      "question": "How do DQN and MAML approach learning differently?",
+      "reference_answer": "DQN learns reinforcement-learning action values from environmental experience using Q-learning and a deep neural network, whereas MAML learns initial model parameters designed for rapid adaptation to new tasks through a small number of gradient updates.",
+      "category": "cross_document",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:1",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 0,
+          "chunk": 1,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:13",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 13,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q22": {
+      "id": "q22",
+      "question": "What common problem do DQN and MAML attempt to address, despite using different approaches?",
+      "reference_answer": "Both methods address difficult learning settings where standard supervised-learning assumptions are inadequate. DQN enables learning control policies from reinforcement signals and raw sensory experience, while MAML enables rapid learning of new tasks from limited data or experience.",
+      "category": "cross_document",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:33",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 33,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:35",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 35,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:15",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 1,
+          "chunk": 15,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q23": {
+      "id": "q23",
+      "question": "How is reinforcement learning used differently in the DQN and MAML papers?",
+      "reference_answer": "In the DQN paper, reinforcement learning is the main framework used to learn value-based control policies from Atari interactions. In the MAML paper, reinforcement learning is one application domain used to demonstrate how a meta-learned initialization can rapidly adapt policies to new tasks.",
+      "category": "cross_document",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:28",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 2,
+          "chunk": 28,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:86",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 6,
+          "chunk": 86,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a:122",
+          "source_file": "Meta_Learning.pdf",
+          "relative_path": "Meta_Learning.pdf",
+          "file_hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+          "page": 10,
+          "chunk": 122,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c:33",
+          "source_file": "Deep_RL.pdf",
+          "relative_path": "Deep_RL.pdf",
+          "file_hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "page": 3,
+          "chunk": 33,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q24": {
+      "id": "q24",
+      "question": "What is the boiling point of water?",
+      "reference_answer": null,
+      "category": "unsupported",
+      "expected_retrieval": "unsupported",
+      "relevant_chunks": [],
+      "annotation_complete": true
+    },
+    "q25": {
+      "id": "q25",
+      "question": "Who was the first president of the United States?",
+      "reference_answer": null,
+      "category": "unsupported",
+      "expected_retrieval": "unsupported",
+      "relevant_chunks": [],
+      "annotation_complete": true
+    },
+    "q26": {
+      "id": "q26",
+      "question": "What is the capital of France?",
+      "reference_answer": null,
+      "category": "unsupported",
+      "expected_retrieval": "unsupported",
+      "relevant_chunks": [],
+      "annotation_complete": true
+    },
+    "q27": {
+      "id": "q27",
+      "question": "What are the three main components of the World Models agent?",
+      "reference_answer": "The World Models agent contains a Vision component, a Memory component, and a Controller. Vision compresses observations, Memory represents and predicts temporal information, and the Controller chooses actions using information produced by Vision and Memory.",
+      "category": "world_models",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:18",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 1,
+          "chunk": 18,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:13",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 1,
+          "chunk": 13,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q28": {
+      "id": "q28",
+      "question": "What is the role of the VAE in the World Models architecture?",
+      "reference_answer": "The Variational Autoencoder is the Vision component and compresses each high-dimensional observed image frame into a small latent vector z.",
+      "category": "world_models",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:131",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 12,
+          "chunk": 131,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:40",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 4,
+          "chunk": 40,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q29": {
+      "id": "q29",
+      "question": "What does the MDN-RNN learn to predict?",
+      "reference_answer": "The MDN-RNN acts as the Memory model and predicts a probability distribution for the next latent vector using the current latent representation, action, and RNN hidden state.",
+      "category": "world_models",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:138",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 13,
+          "chunk": 138,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:21",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 2,
+          "chunk": 21,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    },
+    "q30": {
+      "id": "q30",
+      "question": "How can a policy trained inside a world model be transferred to the real environment?",
+      "reference_answer": "The learned world model can be wrapped as a virtual reinforcement-learning environment and used to train the controller entirely in latent space. After a satisfactory policy is learned in the virtual environment, the same policy can be deployed in the actual environment to test how well it transfers.",
+      "category": "world_models",
+      "expected_retrieval": "supported",
+      "relevant_chunks": [
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:87",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 9,
+          "chunk": 87,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:54",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 5,
+          "chunk": 54,
+          "relevance": "partially_relevant"
+        },
+        {
+          "chunk_id": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce:60",
+          "source_file": "World_Models.pdf",
+          "relative_path": "World_Models.pdf",
+          "file_hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+          "page": 6,
+          "chunk": 60,
+          "relevance": "partially_relevant"
+        }
+      ],
+      "annotation_complete": true
+    }
+  }
+}

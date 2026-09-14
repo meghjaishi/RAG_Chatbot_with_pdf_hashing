@@ -1,0 +1,32 @@
+{
+    "Deep_RL.pdf": {
+        "chunks": 91,
+        "embedding_model": "text-embedding-3-large",
+        "file_size": 483443,
+        "hash": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+        "indexed_at": "2026-07-17T20:29:29.469152+00:00",
+        "pages": 9,
+        "pinecone_index": "rl-explore-index",
+        "upload_time_seconds": 4.99
+    },
+    "Meta_Learning.pdf": {
+        "chunks": 137,
+        "embedding_model": "text-embedding-3-large",
+        "file_size": 4064212,
+        "hash": "36e2130943089066456dc94b4af177f224a64506710a11dd35dd68b47a3acf5a",
+        "indexed_at": "2026-07-17T20:29:34.225841+00:00",
+        "pages": 13,
+        "pinecone_index": "rl-explore-index",
+        "upload_time_seconds": 4.73
+    },
+    "World_Models.pdf": {
+        "chunks": 209,
+        "embedding_model": "text-embedding-3-large",
+        "file_size": 3147467,
+        "hash": "b0c1e30aab53efd28ddf61d661f680150918d4d03b77bae62bc52d62dbd76cce",
+        "indexed_at": "2026-07-17T20:29:42.568998+00:00",
+        "pages": 21,
+        "pinecone_index": "rl-explore-index",
+        "upload_time_seconds": 8.32
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "num_questions": 1,
+  "summary": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9999918904023805,
+    "context_precision": 0.5833333333041666,
+    "context_recall": 1.0
+  },
+  "results": [
+    {
+      "id": "q02",
+      "question": "What type of input does the DQN in the paper use?",
+      "answer": "The DQN (Deep Q-Network) in the paper uses raw pixels as input. It processes these high-dimensional sensory inputs to estimate future rewards, specifically applying the method to Atari 2600 games without adjusting the architecture or learning algorithm.",
+      "reference_answer": "The DQN operates directly on raw visual input from Atari game screens rather than depending on manually engineered visual features.",
+      "documents_found": 3,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9999918904023805,
+      "context_precision": 0.5833333333041666,
+      "context_recall": 1.0
+    }
+  ]
+}

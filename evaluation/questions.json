@@ -1,0 +1,410 @@
+{
+    "dataset_version": "1.0",
+    "questions": [
+      {
+        "id": "q01",
+        "category": "deep_rl",
+        "question": "What is a Deep Q-Network (DQN)?",
+        "reference_answer": "A Deep Q-Network is a deep learning model for reinforcement learning that uses a convolutional neural network trained with a variant of Q-learning. It operates on raw visual input and outputs action-value estimates that represent expected future rewards.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "deep q-network",
+          "q-learning",
+          "convolutional",
+          "value function",
+          "raw pixels"
+        ]
+      },
+      {
+        "id": "q02",
+        "category": "deep_rl",
+        "question": "What type of input does the DQN in the paper use?",
+        "reference_answer": "The DQN operates directly on raw visual input from Atari game screens rather than depending on manually engineered visual features.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "raw pixels",
+          "visual input",
+          "sensory input",
+          "images"
+        ]
+      },
+      {
+        "id": "q03",
+        "category": "deep_rl",
+        "question": "Why is reinforcement learning difficult for conventional deep learning methods?",
+        "reference_answer": "Reinforcement learning presents several difficulties for deep learning because reward signals may be sparse, noisy, and delayed, observations are often highly correlated over time, and the data distribution changes as the agent learns new behaviors.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "sparse",
+          "noisy",
+          "delayed",
+          "correlated states",
+          "data distribution"
+        ]
+      },
+      {
+        "id": "q04",
+        "category": "deep_rl",
+        "question": "What problem does experience replay address in deep reinforcement learning?",
+        "reference_answer": "Experience replay helps reduce problems caused by correlated training data and changing data distributions by storing previous transitions and randomly sampling past experiences for training.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "experience replay",
+          "correlated",
+          "non-stationary",
+          "randomly samples"
+        ]
+      },
+      {
+        "id": "q05",
+        "category": "deep_rl",
+        "question": "How does experience replay work in the DQN approach?",
+        "reference_answer": "The agent stores transitions from its interaction with the environment in replay memory and later samples stored transitions randomly to perform Q-learning updates.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "experience replay",
+          "replay memory",
+          "transitions",
+          "random minibatch"
+        ]
+      },
+      {
+        "id": "q06",
+        "category": "deep_rl",
+        "question": "Is the DQN algorithm model-free or model-based?",
+        "reference_answer": "The algorithm is model-free because it learns directly from samples obtained through interaction with the environment without explicitly constructing an estimate of the environment.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "model-free",
+          "without explicitly constructing",
+          "environment"
+        ]
+      },
+      {
+        "id": "q07",
+        "category": "deep_rl",
+        "question": "Is DQN an on-policy or off-policy method?",
+        "reference_answer": "DQN is an off-policy method. It learns about a greedy strategy while following a behavior distribution that supports exploration.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "off-policy",
+          "greedy strategy",
+          "behaviour distribution"
+        ]
+      },
+      {
+        "id": "q08",
+        "category": "deep_rl",
+        "question": "What is the purpose of an epsilon-greedy strategy in DQN?",
+        "reference_answer": "An epsilon-greedy strategy balances exploitation and exploration by usually selecting the greedy action while occasionally selecting a random action to explore the state space.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "epsilon-greedy",
+          "random action",
+          "exploration",
+          "greedy strategy"
+        ]
+      },
+      {
+        "id": "q09",
+        "category": "deep_rl",
+        "question": "Why does DQN use stochastic gradient updates?",
+        "reference_answer": "Stochastic gradient updates allow efficient learning from sampled experiences with a low computational cost per update instead of repeatedly processing an entire growing dataset.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "stochastic gradient",
+          "batch update",
+          "computational cost",
+          "data set"
+        ]
+      },
+      {
+        "id": "q10",
+        "category": "deep_rl",
+        "question": "What did the DQN paper demonstrate on Atari 2600 games?",
+        "reference_answer": "The paper demonstrated that a deep reinforcement learning model could learn control policies directly from raw pixels and achieve state-of-the-art performance on six of seven tested Atari games, while exceeding a human expert on three games.",
+        "expected_retrieval": "supported",
+        "source_hint": "Deep_RL.pdf",
+        "keywords": [
+          "Atari",
+          "human expert",
+          "six",
+          "seven games",
+          "raw pixels"
+        ]
+      },
+      {
+        "id": "q11",
+        "category": "meta_learning",
+        "question": "What is the goal of few-shot meta-learning?",
+        "reference_answer": "The goal of few-shot meta-learning is to train a model that can quickly adapt to a new task using only a small number of examples and training iterations.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "few-shot",
+          "adapt",
+          "new task",
+          "few datapoints"
+        ]
+      },
+      {
+        "id": "q12",
+        "category": "meta_learning",
+        "question": "What does MAML stand for?",
+        "reference_answer": "MAML stands for Model-Agnostic Meta-Learning.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "Model-Agnostic Meta-Learning",
+          "MAML"
+        ]
+      },
+      {
+        "id": "q13",
+        "category": "meta_learning",
+        "question": "What is the main idea behind Model-Agnostic Meta-Learning?",
+        "reference_answer": "MAML learns an initialization of model parameters that can be adapted effectively to a new task using only a small number of gradient updates and a small amount of task-specific data.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "fast adaptation",
+          "gradient",
+          "initial parameters",
+          "new task"
+        ]
+      },
+      {
+        "id": "q14",
+        "category": "meta_learning",
+        "question": "What happens during the task-specific adaptation step in MAML?",
+        "reference_answer": "For each task, MAML evaluates the task loss gradient using a small number of examples and applies one or more gradient descent updates to obtain task-adapted parameters.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "adapted parameters",
+          "gradient descent",
+          "task",
+          "K examples"
+        ]
+      },
+      {
+        "id": "q15",
+        "category": "meta_learning",
+        "question": "How does MAML differ from ordinary pretraining?",
+        "reference_answer": "Ordinary pretraining primarily seeks parameters that perform well on the training tasks, whereas MAML explicitly optimizes parameters so that subsequent gradient updates can rapidly produce good performance on new tasks.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "pretraining",
+          "fast adaptation",
+          "gradient",
+          "new tasks"
+        ]
+      },
+      {
+        "id": "q16",
+        "category": "meta_learning",
+        "question": "Does MAML depend on a particular model architecture?",
+        "reference_answer": "No. MAML is model-agnostic and can be applied to different parameterized models as long as the required gradient-based optimization can be performed.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "model-agnostic",
+          "no assumption",
+          "parameter vector",
+          "gradient"
+        ]
+      },
+      {
+        "id": "q17",
+        "category": "meta_learning",
+        "question": "Why can MAML adapt quickly to new tasks?",
+        "reference_answer": "MAML learns initial parameters that are especially suitable for adaptation, so relatively small gradient-based parameter changes can produce large improvements on a new task.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "small changes",
+          "large improvements",
+          "fast adaptation",
+          "parameters"
+        ]
+      },
+      {
+        "id": "q18",
+        "category": "meta_learning",
+        "question": "Can MAML be applied to reinforcement learning?",
+        "reference_answer": "Yes. MAML can be applied to reinforcement learning and the paper demonstrates adaptation of reinforcement-learning policies using policy-gradient methods and relatively small amounts of experience.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "reinforcement learning",
+          "policy gradient",
+          "experience",
+          "adapt"
+        ]
+      },
+      {
+        "id": "q19",
+        "category": "meta_learning",
+        "question": "How does MAML use knowledge from previous tasks?",
+        "reference_answer": "MAML uses experience across many training tasks to learn shared initial parameters that transfer to new tasks and allow those tasks to be learned rapidly instead of starting from an arbitrary initialization.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "distribution over tasks",
+          "meta-training",
+          "new tasks",
+          "initialization"
+        ]
+      },
+      {
+        "id": "q20",
+        "category": "meta_learning",
+        "question": "What are the main steps in the MAML training algorithm?",
+        "reference_answer": "MAML samples tasks, evaluates each task loss using a small number of examples, computes adapted parameters through gradient descent, evaluates the adapted models, and then updates the shared initial parameters using the meta-objective across the sampled tasks.",
+        "expected_retrieval": "supported",
+        "source_hint": "Meta_Learning.pdf",
+        "keywords": [
+          "Algorithm 1",
+          "sample batch of tasks",
+          "adapted parameters",
+          "update theta"
+        ]
+      },
+      {
+        "id": "q21",
+        "category": "cross_document",
+        "question": "How do DQN and MAML approach learning differently?",
+        "reference_answer": "DQN learns reinforcement-learning action values from environmental experience using Q-learning and a deep neural network, whereas MAML learns initial model parameters designed for rapid adaptation to new tasks through a small number of gradient updates.",
+        "expected_retrieval": "supported",
+        "source_hint": null,
+        "keywords": [
+          "Q-learning",
+          "DQN",
+          "MAML",
+          "fast adaptation"
+        ]
+      },
+      {
+        "id": "q22",
+        "category": "cross_document",
+        "question": "What common problem do DQN and MAML attempt to address, despite using different approaches?",
+        "reference_answer": "Both methods address difficult learning settings where standard supervised-learning assumptions are inadequate. DQN enables learning control policies from reinforcement signals and raw sensory experience, while MAML enables rapid learning of new tasks from limited data or experience.",
+        "expected_retrieval": "supported",
+        "source_hint": null,
+        "keywords": [
+          "reinforcement learning",
+          "raw sensory",
+          "few-shot",
+          "adaptation"
+        ]
+      },
+      {
+        "id": "q23",
+        "category": "cross_document",
+        "question": "How is reinforcement learning used differently in the DQN and MAML papers?",
+        "reference_answer": "In the DQN paper, reinforcement learning is the main framework used to learn value-based control policies from Atari interactions. In the MAML paper, reinforcement learning is one application domain used to demonstrate how a meta-learned initialization can rapidly adapt policies to new tasks.",
+        "expected_retrieval": "supported",
+        "source_hint": null,
+        "keywords": [
+          "reinforcement learning",
+          "DQN",
+          "MAML",
+          "policy"
+        ]
+      },
+      {
+        "id": "q24",
+        "category": "unsupported",
+        "question": "What is the boiling point of water?",
+        "reference_answer": null,
+        "expected_retrieval": "unsupported",
+        "source_hint": null,
+        "keywords": []
+      },
+      {
+        "id": "q25",
+        "category": "unsupported",
+        "question": "Who was the first president of the United States?",
+        "reference_answer": null,
+        "expected_retrieval": "unsupported",
+        "source_hint": null,
+        "keywords": []
+      },
+      {
+        "id": "q26",
+        "category": "unsupported",
+        "question": "What is the capital of France?",
+        "reference_answer": null,
+        "expected_retrieval": "unsupported",
+        "source_hint": null,
+        "keywords": []
+      },
+      {
+        "id": "q27",
+        "category": "world_models",
+        "question": "What are the three main components of the World Models agent?",
+        "reference_answer": "The World Models agent contains a Vision component, a Memory component, and a Controller. Vision compresses observations, Memory represents and predicts temporal information, and the Controller chooses actions using information produced by Vision and Memory.",
+        "expected_retrieval": "supported",
+        "source_hint": "World_Models.pdf",
+        "keywords": [
+          "Vision",
+          "Memory",
+          "Controller",
+          "three components"
+        ]
+      },
+      {
+        "id": "q28",
+        "category": "world_models",
+        "question": "What is the role of the VAE in the World Models architecture?",
+        "reference_answer": "The Variational Autoencoder is the Vision component and compresses each high-dimensional observed image frame into a small latent vector z.",
+        "expected_retrieval": "supported",
+        "source_hint": "World_Models.pdf",
+        "keywords": [
+          "Variational Autoencoder",
+          "VAE",
+          "latent vector",
+          "compress"
+        ]
+      },
+      {
+        "id": "q29",
+        "category": "world_models",
+        "question": "What does the MDN-RNN learn to predict?",
+        "reference_answer": "The MDN-RNN acts as the Memory model and predicts a probability distribution for the next latent vector using the current latent representation, action, and RNN hidden state.",
+        "expected_retrieval": "supported",
+        "source_hint": "World_Models.pdf",
+        "keywords": [
+          "MDN-RNN",
+          "next latent vector",
+          "probability distribution",
+          "hidden state"
+        ]
+      },
+      {
+        "id": "q30",
+        "category": "world_models",
+        "question": "How can a policy trained inside a world model be transferred to the real environment?",
+        "reference_answer": "The learned world model can be wrapped as a virtual reinforcement-learning environment and used to train the controller entirely in latent space. After a satisfactory policy is learned in the virtual environment, the same policy can be deployed in the actual environment to test how well it transfers.",
+        "expected_retrieval": "supported",
+        "source_hint": "World_Models.pdf",
+        "keywords": [
+          "virtual environment",
+          "actual environment",
+          "learned policy",
+          "dream",
+          "transfer"
+        ]
+      }
+    ]
+  }
