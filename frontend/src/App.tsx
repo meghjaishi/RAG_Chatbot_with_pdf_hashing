@@ -23,7 +23,35 @@ function App() {
 
   if (!token) {
     return (
-      <LoginForm onLogin={setToken} />
+      <div className="landing-page">
+
+        {/* New portfolio/demo content goes here */}
+
+        <section className="hero-section">
+          {/* Hero content */}
+          {/* Demo conversation */}
+        </section>
+
+        <section className="features-section">
+          {/* Feature cards */}
+        </section>
+
+        <section
+          id="login"
+          className="login-section"
+        >
+          <p className="demo-note">
+            The public GitHub Pages deployment is a
+            frontend showcase. Full authentication
+            and RAG functionality require the
+            FastAPI backend.
+          </p>
+
+          {/* Your EXISTING working LoginForm */}
+          <LoginForm onLogin={setToken} />
+        </section>
+
+      </div>
     );
   }
 
