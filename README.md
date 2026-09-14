@@ -1,5 +1,6 @@
 # Personal Multi-Document RAG Chatbot
 
+### 🌐 [View Live Frontend Demo](https://meghjaishi.github.io/RAG_Chatbot_with_pdf_hashing/)
 A production-oriented Retrieval-Augmented Generation (RAG) application
 for asking questions over a collection of PDF documents. The project
 evolved from a Streamlit prototype into a FastAPI backend with
