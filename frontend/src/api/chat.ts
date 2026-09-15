@@ -126,7 +126,50 @@ export async function streamChatMessage(
     }
 }
 
+function processSSEEvent(
+    rawEvent: string,
+    onEvent: (event: StreamEvent) => void
+  ): void {
+    const lines = rawEvent.split("\n");
+  
+    let eventName = "";
+    let rawData = "";
+  
+    for (const line of lines) {
+      if (line.startsWith("event:")) {
+        eventName = line
+          .slice(6)
+          .trim();
+      }
+  
+      if (line.startsWith("data:")) {
+        rawData = line
+          .slice(5)
+          .trim();
+      }
+    }
+  
+    if (!eventName || !rawData) {
+      return;
+    }
+  
+    try {
+      const parsedData: unknown =
+        JSON.parse(rawData);
+  
+      onEvent({
+        event: eventName,
+        data: parsedData,
+      });
+    } catch {
+      console.warn(
+        "Could not parse SSE event:",
+        rawEvent
+      );
+    }
+  }
 
+/*
 function processSSEEvent(
     rawEvent: string,
     onEvent: (event: StreamEvent) => void
@@ -159,3 +202,4 @@ function processSSEEvent(
       }
     }
 }
+*/

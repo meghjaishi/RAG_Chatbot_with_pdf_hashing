@@ -627,3 +627,50 @@ input {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- RAG Sources ---------- */
+
+.message-sources {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.sources-title {
+  margin-bottom: 8px;
+  color: #4b5563;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.source-item {
+  padding: 9px 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.source-file {
+  display: block;
+  color: #1f2937;
+  font-size: 0.84rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.source-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 3px;
+  color: #6b7280;
+  font-size: 0.75rem;
+}

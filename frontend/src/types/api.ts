@@ -7,11 +7,13 @@ export interface ChatRequest {
 }
 
 export interface RetrievedDocument {
+    source?: string;
     source_file?: string;
+    relative_path?: string;
     page?: number;
     chunk?: number;
     content?: string;
-}
+  }
 
 export interface ChatResponse {
     answer: string;

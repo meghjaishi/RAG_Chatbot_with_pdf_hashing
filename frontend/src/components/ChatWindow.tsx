@@ -1,11 +1,18 @@
 import { useEffect, useState, useRef, type SubmitEvent,  } from "react";
 
 import { streamChatMessage } from "../api/chat";
+import type { RetrievedDocument } from "../types/api";
+
+// interface Message {
+//   role: "user" | "assistant";
+//   content: string;
+// }
 
 interface Message {
-  role: "user" | "assistant";
-  content: string;
-}
+    role: "user" | "assistant";
+    content: string;
+    sources?: RetrievedDocument[];
+  }
 
 interface ChatWindowProps {
     onSessionExpired: () => void;
@@ -68,7 +75,83 @@ export default function ChatWindow({
         assistantMessage,
       ]);
 
+      // updated streamChatMessage to show metadata
+      await streamChatMessage(
+        {
+          question,
+          history: previousMessages,
+        },
+        (event) => {
+          // Handle streamed answer tokens
+          if (
+            event.event === "token" &&
+            typeof event.data === "string"
+          ) {
+            setMessages((currentMessages) => {
+              const nextMessages = [
+                ...currentMessages,
+              ];
       
+              const lastIndex =
+                nextMessages.length - 1;
+      
+              const lastMessage =
+                nextMessages[lastIndex];
+      
+              if (
+                lastMessage &&
+                lastMessage.role === "assistant"
+              ) {
+                nextMessages[lastIndex] = {
+                  ...lastMessage,
+                  content:
+                    lastMessage.content +
+                    event.data,
+                };
+              }
+      
+              return nextMessages;
+            });
+      
+            return;
+          }
+      
+          // Handle retrieved RAG sources
+          if (
+            event.event === "sources" &&
+            Array.isArray(event.data)
+          ) {
+            const sources =
+              event.data as RetrievedDocument[];
+      
+            setMessages((currentMessages) => {
+              const nextMessages = [
+                ...currentMessages,
+              ];
+      
+              const lastIndex =
+                nextMessages.length - 1;
+      
+              const lastMessage =
+                nextMessages[lastIndex];
+      
+              if (
+                lastMessage &&
+                lastMessage.role === "assistant"
+              ) {
+                nextMessages[lastIndex] = {
+                  ...lastMessage,
+                  sources,
+                };
+              }
+      
+              return nextMessages;
+            });
+          }
+        }
+      );
+
+      /*
       await streamChatMessage(
         {
           question,
@@ -105,7 +188,7 @@ export default function ChatWindow({
           });
         }
       );
-      
+     */ 
     } catch (err) {
       const message =
         err instanceof Error
@@ -182,6 +265,52 @@ export default function ChatWindow({
                   </span>
                 )
               )}
+
+              {message.role === "assistant" &&
+                message.sources &&
+                message.sources.length > 0 && (
+                    <div className="message-sources">
+                    <div className="sources-title">
+                        Sources
+                    </div>
+
+                    <div className="sources-list">
+                        {message.sources.map(
+                        (source, sourceIndex) => (
+                            <div
+                            className="source-item"
+                            key={
+                                `${source.source ??
+                                source.source_file ??
+                                "document"}-` +
+                                `${source.chunk}-${sourceIndex}`
+                            }
+                            >
+                            <span className="source-file">
+                                {source.source ??
+                                source.source_file ??
+                                "Document"}
+                            </span>
+
+                            <div className="source-details">
+                                {source.page !== undefined && (
+                                <span>
+                                    Page {source.page + 1}
+                                </span>
+                                )}
+
+                                {source.chunk !== undefined && (
+                                <span>
+                                    Chunk {source.chunk}
+                                </span>
+                                )}
+                            </div>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  </div>
+                )}
             </div>
           </div>
         ))}
